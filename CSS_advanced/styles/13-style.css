@@ -57,13 +57,13 @@ a:link {
 }
 a:visited {
 
-    font-size: italic;
+    font-style: italic;
 }
 a.hover {
     text-decoration: underline;
 }
 a:active {
-    background-color: lightgrey;
+    background-color: var(--color-light-grey);
 }
 .section-tagline {
     color: var(--color-primary);
