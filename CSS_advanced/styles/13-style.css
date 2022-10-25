@@ -51,15 +51,15 @@ h6 {
     font-weight: var(--font-weight-bold);
 }
 
-a.link {
+a:link {
     color: var(--text-color);
     text-decoration: none;
 }
-a.visited {
+a:visited {
 
 font-size: italic;
 }
-a.hover {
+a:hover {
     color: lightgrey;
 }
 .section-tagline {
