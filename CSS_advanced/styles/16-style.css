@@ -93,11 +93,12 @@ a:active {
 }
 .container {
     width: 960px;
+    margin-right: auto;
+    margin-right: auto;
 }
 .card-category {
     color: var(--color-primary);
-    margin-right: 10%;
-    margin-right: 10%;
+  
 }
 
 .section-header {
