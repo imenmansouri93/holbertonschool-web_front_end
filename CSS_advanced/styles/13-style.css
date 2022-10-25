@@ -60,7 +60,7 @@ a:visited {
 font-size: italic;
 }
 a:hover {
-    color: lightgrey;
+    background-color: lightgrey;
 }
 .section-tagline {
     color: var(--color-primary);
