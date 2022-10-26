@@ -352,7 +352,7 @@ ul.row {
     overflow: hidden;
 }
 
-.card-work .card-image {
+.card-image .card-work  {
     height: 30rem;
     width: 100%;
     object-fit: cover;
@@ -381,7 +381,7 @@ ul.row {
 }
 
 .card-work .card-title a {
-    position: absolute;
+    display: block;
     text-decoration: none;
     padding-top: 45%;
 }
