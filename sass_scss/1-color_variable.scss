@@ -1,5 +1,10 @@
-$bg:"#3D3D3D";
+/*assgns the text color #3D3D3D to the HTML tags body and p */
+$text-color: #3D3D3D;
 
-body, p {
-    color: $bg;
+body  {
+    color: $text-color;
+}
+
+p  {
+    color: $text-color;
 }
