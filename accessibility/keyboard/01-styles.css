@@ -465,6 +465,12 @@
     position: relative;
   }
   
+  .card-work .card-title a:focus {
+    opacity: 1;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
   .card-work .card-title a {
     display: block;
     text-decoration: none;
@@ -480,13 +486,6 @@
     bottom: 0;
     content: '';
   }
-
-  .card-work:hover .card-title a {
-    opacity: 1;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  
  
   
   /* Card SERVICES
