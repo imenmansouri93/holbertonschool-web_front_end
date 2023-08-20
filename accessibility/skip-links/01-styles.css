@@ -181,8 +181,8 @@
     position: absolute;
   }
   .skip-link {
-    background: #090909;
-    color: #ffffff;
+    background: var(--color-black);
+    color: var(--color-white);
     left: 0;
     padding: .7rem;
     position: fixed;
