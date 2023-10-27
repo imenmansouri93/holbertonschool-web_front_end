@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <form>
+            <div>
+                <label for="exampleInputEmail1" class="form-label">first name</label>
+                <input type="text" class="form-control" id="firstname" aria-describedby="emailHelp">
+                <label class="form-label">email</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <br />
+            <button type="submit" class="btn btn-primary" onclick="setCookies()">Log me</button>
+            <button type="submit" class="btn btn-primary" onclick="showCookies()">Show the cookies</button>
+        </form>
+    </div>
+</body>
+<script>
+    function setCookies() {
+        const firstname = document.getElementById('firstname')
+        const email = document.getElementById('email')
+
+        const firstnamevalue = firstname.value;
+        const emailvalue = email.value;
+
+        // set cookies with the values
+        document.cookie = `firstname = ${firstnamevalue}`;
+        document.cookie = `email = ${emailvalue}`;
+
+    }
+    function showCookies() {
+        const paragraph = document.createElement("p")
+
+        // get all cookies as a string
+        const allcookies = document.cookie;
+
+        // Set the inner HTML of the paragraph
+        paragraph.innerHTML = `Cookies: ${allCookies}`;
+
+        document.body.appendChild(paragraph);
+    }
+</script>
+
+</html>
