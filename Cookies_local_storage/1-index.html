@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <label for="exampleInputEmail1" class="form-label">first name</label>
+        <input type="text" class="form-control" id="firstname" aria-describedby="emailHelp">
+        <label class="form-label">email</label>
+        <input type="email" class="form-control" id="email">
+        <button id="logId" class="btn btn-primary" onclick="setCookies()">Log me</button>
+    </section>
+    <br />
+
+    <section>
+        <button id="cookiesId" class="btn btn-primary" onclick="showCookies()">Show the cookies</button>
+    </section>
+
+</body>
+<script>
+    const setCookies = () => {
+        const $firstname = document.getElementById('firstname').value;
+        const $email = document.getElementById('email').value;
+
+        // Calculate the expiration date for 10 days from now
+        const expirationDate = new Date();
+        expirationDate.setDate(expirationDate.getDate() + 10);
+
+        // Convert the expiration date to a string in UTC format
+        const expires = `expires=${expirationDate.toUTCString()};`;
+
+        // set cookies with the values
+        document.cookie = `firstname = ${$firstname}`;
+        document.cookie = `email = ${$email}`;
+
+    };
+    const showCookies = () => {
+      let s = document.querySelectorAll("section");
+      s = s[1];
+      const p = document.createElement("p");
+      p.innerText = `Cookies: ${document.cookie}`;
+      s.appendChild(p);
+    };
+</script>
+
+</html>
